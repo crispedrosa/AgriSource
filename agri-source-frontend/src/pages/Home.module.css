@@ -1,0 +1,98 @@
+.home {
+  text-align: center;
+  padding: 2rem;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exploreButton {
+  margin-bottom: 2rem; 
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.exploreButton:hover {
+  background-color: #367c39;
+}
+
+.bannerSection {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.bannerCard {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  background: white;
+  padding: 20px;
+}
+
+.bannerCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.bannerCard img {
+  width: 100%;
+  height: auto; 
+  max-height: 150px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .bannerSection {
+    flex-direction: column;
+  }
+
+  .bannerCard {
+    flex: 1 1 100%;
+  }
+}
+
+
+.bannerCard h3 {
+  text-align: left;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.bannerCard p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.bannerCard button {
+  padding: 0.5rem 1rem;
+  align-self: flex-start;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.bannerCard button:hover {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}

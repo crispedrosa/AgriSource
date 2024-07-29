@@ -1,0 +1,9 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql-container-logistics
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: agrosource_logistics
+    ports:
+      - "3307:3306"
